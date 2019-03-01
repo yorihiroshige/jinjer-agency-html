@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>パスワードの変更｜jinjer代理店admin</title>
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-admin.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-main.css' type='text/css' media='all' />
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body class="main-container">
+	<div class="content-outer">
+		<div class="content-main cf">
+			<h1><span>パスワードの変更</span></h1>
+			<div class="admin-pwreset-block cf">
+				<p>パスワードは、以下の基準に従う必要があります。<br>
+					・パスワードは8文字以上にしてください。<br>
+					・パスワードに全角文字は使えません。<br>
+					・パスワードに記号は含まれてはいけません。<br>
+				</p>
+				<!-- ↓こちら必須項目が記入されていない際に出てくるエラー警告です。送信ボタン押してページ変わってから表示されます。byぴろ -->
+				<p class="unenterned-error"><a>※ 未記入の必須項目がございます。</a></p>
+				<form class="admin-pwreset-form" action="" method="post">
+					<div class="item">
+						<label class="label" for="name" name="oldpw" required>旧パスワード<a class="required-mark">必須</a></label>
+						<input id="oldpw" type="text">
+					</div>
+					<div class="item">
+						<label class="label" for="name" name="name" required>新パスワード<a class="required-mark">必須</a></label>
+						<input id="name" type="text">
+					</div>
+					<div class="item">
+						<label class="label" for="name" name="furigana" required>新パスワード<span>（確認用）</span><a class="required-mark">必須</a></label>
+						<input id="furigana" type="text">
+					</div>
+
+					<div class="item no-label">
+						<input type="submit" value="保存">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

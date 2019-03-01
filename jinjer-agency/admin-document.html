@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>資料の編集｜jinjer代理店admin</title>
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-document.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-editing.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-main.css' type='text/css' media='all' />
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body class="main-container">
+	<div class="content-outer">
+		<div class="content-main cf">
+			<h1>資料を編集</h1>
+			<div class="content-main_left cf">
+				<div class="content-title">
+					<form class="content-title_edit">
+						<input type="text" id="document-title_edit" class="input-title" size="32" placeholder="タイトルを入力してください。"/>
+					</form>
+				</div>
+				<div class="content-category">
+					<p>カテゴリーを選択<a class="required-mark">必須</a></p>
+					<label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">マニュアル</span></label>
+					<label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">チラシ</span></label>
+					<label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">営業資料</span></label>
+				</div>
+				<!---- document upload ---->
+				<div class="content-upload_document">
+					<div class="inner">
+						<img src="./images/document-upload.png">
+						<p class="upload-procedure">ファイルをドラックしてください。<br>もしくは
+							<div class="uploadbuttun-document">ファイルを選択
+							<input type="file" onchange="uv.style.display='inline-block'; uv.value = this.value;" />
+							<input type="text" id="uv" class="uploadValue" disabled />
+							</div>
+						</p>
+						<p class="upload-description">アップロード可能なファイルは以下のようになります：<br>Word、Excel、PowerPoint、PDF資料、画像（.png、.jpeg等）、Adobe資料等</p>
+					</div>
+				</div>
+				<div class="content-description">
+					<form class="content-description_edit">
+						<input type="text" id="document-title_edit" class="input-title" size="30" placeholder="説明文を入力。（30文字以内）"/>
+					</form>
+				</div>
+			</div>
+			<div class="content-main_right cf">
+				<div class="content-status">
+					<div class="content-status-button">
+						<a href="#">下書き保存</a>
+						<a href="#">プレビュー</a>
+					</div>
+					<div class="content-status-abstract cf">
+						<dl>
+							<dt>ステータス：</dt>
+							<dd class="content-status-abstract_status">下書き</dd>
+							<dt>公開日時：</dt>
+							<dd class="content-status-abstract_release">ー</dd>
+						</dl>
+					</div>
+					<div class="enter-button"><a>公開</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+html{
+	min-height: 100%;
+}
+
+/* ---- ユーザー追加ページ ---- */
+.unenterned-error a{
+	color: #ffffff;
+	font-size: 12px;
+	background: #e05146;
+	border-radius: 4px;
+	padding: 0.5em 1em;
+}
+
+.user-adding-form {
+	font-size: 16px;
+	font-family: sans-serif;
+	padding: 20px 0;
+}
+
+.user-adding-form .item {
+	display: block;
+	overflow: hidden;
+	padding: 15px 0;
+}
+
+.user-adding-form .item.no-label {
+	padding: 20px 0px 5px 0;
+}
+
+.user-adding-form .item .label {
+	float: left;
+	margin:0;
+	font-weight: bold;
+}
+
+.user-adding-form .item .radio-group{
+	padding: 5px 0px 5px 60px;
+}
+
+.user-adding-form .item input[type=text],
+.user-adding-form .item input[type=email],
+.user-adding-form .item input[type=date],
+.user-adding-form .item textarea {
+	display: block;
+	margin-left: 230px;
+	width: 30%;
+	min-width: 180px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 14px;
+	outline: none;
+}
+
+.user-adding-form .item input:focus{
+	border: 1px solid #a2a2a2;
+}
+
+.user-adding-form .item ::placeholder {
+	color: #ccc;
+}
+
+.user-adding-form .item textarea {
+	outline: none;
+	border: 1px solid #ccc;
+	resize: vertical;
+}
+
+input[type=submit] {
+	border: none;
+	outline: none;
+	display: block;
+	line-height: 30px;
+	padding: 0.2em 2em;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	background-color: #0aa;
+	box-shadow: 0px 1px 5px #d2d2d2;
+	border-radius: 7px;
+	cursor:pointer;
+	box-sizing: content-box;
+	transition:0.1s ease all
+}
+
+input[type=submit]:hover{
+	background:#34c3b3;
+}
+
+/* ---- ユーザー詳細ページ user-single ---- */
+
+.user-single{
+	font-size: 16px;
+	padding: 20px 0;
+}
+
+.user-single dt{
+	float: left;
+	font-weight: bold;
+	width: 120px;
+	margin-right: 60px;
+	padding-bottom: 30px;
+}
+
+.user-single dd{
+	padding-bottom: 30px;
+}
+
+.user-single-button a {
+	display: inline-block;
+	margin-right: 30px;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 7px;
+    box-shadow: 0px 1px 5px #d2d2d2;
+}
+
+.user-single-button a:hover{
+	opacity: 0.8;
+}
+
+.user-single-button .edit{
+	background: #363B40;
+	padding: 0.5em 1.5em;
+}
+
+.user-single-button .invalidate{
+	background: #E14D42;
+	padding: 0.5em 1.0em;
+}
+
+
+/* ---- ユーザーの削除 user-delete ---- */
+.user-single p{
+	margin:0 auto 50px;
+}
+
+.user-single p span{
+	font-weight: bold;
+	margin: 0 0.5em;
+}
+
+.user-single-button .cancel{
+	background: #363B40;
+	padding: 0.5em 1.2em;
+}
+
+.user-single-button .delete{
+	background: #E14D42;
+	padding: 0.5em 1.2em;
+}
+
+
+/* ---- ユーザー削除を完了 user-complete ---- */
+.user-delete-complete{
+
+}
+
+.user-delete-complete p{
+	font-weight: bold;
+	margin:30px auto 50px;
+}
+
+.user-delete-complete a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #0aa;
+}
+
+.user-delete-complete a:hover{
+	text-decoration: underline;
+	text-decoration-color: #0aa; 
+}

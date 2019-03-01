@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+html{
+	min-height: 100%;
+}
+
+.content-filter dl{
+	font-size: 12px;
+	margin: 5px auto;
+}
+
+.content-filter .content-filter-term{
+	font-weight: 600;
+	padding-right: 0;
+	float: left;
+}
+
+.content-filter .content-filter-term::after {
+	content: ' :';
+}
+
+.content-filter .content-filter-item {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	margin-left: 15px;
+	width: 11%;
+}
+
+.content-filter .content-filter-item span{
+	margin-left: 6px;
+}
+
+
+/* ---- list ---- */
+.content-list-block{
+	max-width: 100%;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	background: #ffffff;
+	word-wrap: break-word;
+	color: #1A1A1A;
+	border-spacing: 0;
+	width: 98%;
+	clear: both;
+	margin: 20px 0;
+	border-collapse: collapse;
+}
+
+.content-list-block thead th{
+	border-bottom: 1px solid #E2E2E2;
+	font-weight: normal;
+	text-align: left;
+	font-size: 13px;
+	padding: 8px 15px;
+	color: #636366;
+
+}
+
+.content-list-block tr{
+	border-bottom: 1px solid #f1f1f1;
+}
+
+.content-list-block tr:last-child{
+	border-bottom: none;
+}
+
+.content-list-block tr:hover{
+	background: #EDEDED;
+}
+
+.content-list-block .content-bar:hover{
+	background: #ffffff;
+}
+
+.content-list-block tr td{
+	vertical-align: top;
+	font-size: 14px;
+	padding: 10px 15px;
+	width: auto;
+	vertical-align: middle;
+}
+
+.content-list-block .row-thumbnail img{
+	width:176px;
+}
+
+.content-list-block tr td a{
+	text-decoration: none;
+	color: #1A1A1A;
+}
+
+.content-list-block .list-title{
+	width: 45%;
+}
+
+.content-list-block .list-title_video{
+	width:34%;
+}
+
+
+.content-list-block .row-delete{
+	color: #099;
+	text-decoration: underline;
+	text-decoration-color: #099;
+}
+
+/* ---- pager ---- */
+.content-pager {
+	overflow: hidden;
+	width: 98%;
+}
+ 
+.content-pager ul {
+/*  background: #EEE;*/
+	list-style: none;
+	position: relative;
+	left: 45%;
+	float: left;
+}
+ 
+.content-pager ul li {
+	margin: 0 1px;
+	position: relative;
+	left: -50%;
+	float: left;
+}
+ 
+.content-pager ul li span,
+.content-pager ul li a {
+	display: block;
+	font-size: 16px;
+	padding: 0.2em 0.8em;
+	border-radius: 3px;
+
+}
+ 
+.content-pager ul li a {
+	color: #363B40;
+	text-decoration: none;
+}
+
+.content-pager ul li a:hover {
+	background: #363B40;
+	color: #ffffff;
+}
+
+
+/* ---- ユーザースタイル ---- */
+.user-filter{
+	list-style: none;
+	font-weight: bold;
+	font-size: 12px;
+	padding: 0;
+}
+
+.user-filter li:first-child{
+	float: left;
+	padding-right: 30px;
+}
+
+.user-filter li a{
+	color: #363B40;
+}
+
+.user-filter li a:hover{
+	opacity: 0.8;
+}
+
+.content-list-block .agency-active-img img{
+	width: 50px;
+	margin-top: 8px;
+}

@@ -1,0 +1,147 @@
+@charset "utf-8";
+
+.login{
+	/* Firefox */
+	background: -moz-linear-gradient(top, #555E6A, #121415);
+	/* Chrome , Safari */
+	background: -webkit-linear-gradient(top, #555E6A, #121415);
+	/* IE11 */
+	background: linear-gradient(to bottom, #555E6A, #121415);
+	/* 代用 */
+}
+
+.login-block{
+	width: 382px;
+	height: 401px;
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	bottom: 0px;
+	margin: auto;
+}
+
+.login-box{
+	background: #FFFFFF;
+	border: 1px solid #E3E3E3;
+	border-radius: 13px;
+	padding: 40px;
+	box-shadow: 0 5px 10px #000000;
+}
+
+.login-box h1{
+	color: #222222;
+	font-size: 18px;
+	margin: auto;
+	width: 42%;
+	background:url("../images/jinjer-logo222.png") no-repeat;
+	background-size: 107px;
+	padding: 15px 0 0 112px;
+	height: 40px;
+	vertical-align: middle;
+	text-shadow: 1px 1px 1px #d2d2d2;
+}
+
+.login label{
+	color: #313131;
+	font-size: 10px;
+}
+
+.login input{
+	border: 1px solid #CCCCCC;
+	border-radius: 6px;
+	width: 95%;
+	padding: 8px;
+	display: block;
+	height: 1.5em;
+	color: #313131;
+	font-size: 14px;
+	outline: none;
+	margin: 20px 0;
+}
+
+.login input:focus{
+	border: 1px solid #F0E00C;
+}
+
+.login input[type=checkbox]{
+	border-radius: 50px;
+}
+
+#remember{
+	width: 15px;
+	display: inline-block;
+	margin: 5px 0 30px;
+}
+
+.login-go{
+	color: #ffffff;
+	padding: 0.3em 0.7em;
+	display: block;
+	background: #47d2c1;
+	text-decoration: none;
+	font-size: 16px;
+	border-radius: 8px;
+	margin: auto;
+	text-align: center;
+	width: 100px;
+	box-shadow: 0px 1px 5px #d2d2d2;
+}
+
+.form-footer{
+	text-align: center;
+	margin: 15px auto;
+	cursor: pointer;
+}
+
+.form-footer a{
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 12px;
+	width: 100%;
+	padding: 5px 0 ;
+}
+
+.form-footer a:hover{
+	border-bottom: 1px dotted #ffffff;
+}
+
+.forgot{
+	width: 700px;
+}
+
+.forgot h1{
+	width: 70%;
+	padding: 0 0 0 110px;
+	height: 60px;
+}
+
+.forgot h1 span{
+	font-size: 28px;
+	margin-left: 20px;
+}
+
+.forgot p{
+	font-size: 14px;
+	max-width: 70%;
+	margin: 20px auto;
+}
+
+.forgot input{
+	width: 97%;
+	margin: 5px 0 ;
+}
+
+.done{
+	width: 682px;
+}
+
+.done h1{
+	width: 80%;
+}
+
+.done p{
+	font-size: 30px;
+	text-align: center;
+	padding: 30px 0 ;
+}

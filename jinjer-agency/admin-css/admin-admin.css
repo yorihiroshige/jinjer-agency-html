@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+html{
+	min-height: 100%;
+}
+
+/* ---- 管理者ページ admin-profile ---- */
+
+.admin-profile{
+	font-size: 16px;
+	padding: 20px 0;
+}
+
+.admin-profile dt{
+	float: left;
+	font-weight: bold;
+	width: 120px;
+	margin-right: 60px;
+	padding-bottom: 30px;
+}
+
+.admin-profile dd{
+	padding-bottom: 30px;
+}
+
+.admin-profile-button a {
+	display: inline-block;
+	margin-right: 30px;
+	color: #fff;
+	font-size: 16px;
+	text-decoration: none;
+	border-radius: 7px;
+    box-shadow: 0px 1px 5px #d2d2d2;
+}
+
+.admin-profile-button a:hover{
+	opacity: 0.8;
+}
+
+.admin-profile-button .edit{
+	background: #363B40;
+	padding: 0.5em 1.5em;
+}
+
+.admin-profile-button .invalidate{
+	background: #E14D42;
+	padding: 0.5em 1.0em;
+}
+
+
+/* ---- ユーザーの削除 user-delete ---- */
+.admin-profile p{
+	margin:0 auto 50px;
+}
+
+.admin-profile p span{
+	font-weight: bold;
+	margin: 0 0.5em;
+}
+
+.admin-profile-button .cancel{
+	background: #363B40;
+	padding: 0.5em 1.2em;
+}
+
+.admin-profile-button .delete{
+	background: #E14D42;
+	padding: 0.5em 1.2em;
+}
+
+.pwreset{
+	color: #fff;
+	text-decoration: none;
+	font-size: 12px;
+	padding: 0.4em 1em;
+	background: #0aa;
+	border-radius: 50px;
+	box-shadow: 0px 1px 5px #d2d2d2;
+	margin-left: 10%;
+
+}
+
+
+/* ---- 管理者パスワード変更 ---- */
+.unenterned-error a{
+	color: #ffffff;
+	font-size: 12px;
+	background: #e05146;
+	border-radius: 4px;
+	padding: 0.5em 1em;
+}
+
+.admin-pwreset-form {
+	font-size: 16px;
+	font-family: sans-serif;
+	padding: 20px 0;
+}
+
+.admin-pwreset-form .item {
+	display: block;
+	overflow: hidden;
+	padding: 15px 0;
+}
+
+.admin-pwreset-form .item.no-label {
+	padding: 20px 0px 5px 0;
+}
+
+.admin-pwreset-form .item .label {
+	float: left;
+	margin:0;
+	font-weight: bold;
+}
+
+.admin-pwreset-form .item .label span{
+	font-size: 12px;
+}
+
+.admin-pwreset-form .item .radio-group{
+	padding: 5px 0px 5px 60px;
+}
+
+.admin-pwreset-form .item input[type=text],
+.admin-pwreset-form .item input[type=email],
+.admin-pwreset-form .item input[type=date],
+.admin-pwreset-form .item textarea {
+	display: block;
+	margin-left: 250px;
+	width: 30%;
+	min-width: 180px;
+	padding: 5px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	font-size: 14px;
+	outline: none;
+}
+
+.admin-pwreset-form .item input:focus{
+	border: 1px solid #a2a2a2;
+}
+
+.admin-pwreset-form .item ::placeholder {
+	color: #ccc;
+}
+
+.admin-pwreset-form .item textarea {
+	outline: none;
+	border: 1px solid #ccc;
+	resize: vertical;
+}
+
+input[type=submit] {
+	border: none;
+	outline: none;
+	display: block;
+	line-height: 30px;
+	padding: 0.2em 2em;
+	text-align: center;
+	font-size: 13px;
+	color: #fff;
+	background-color: #0aa;
+	box-shadow: 0px 1px 5px #d2d2d2;
+	border-radius: 7px;
+	cursor:pointer;
+	box-sizing: content-box;
+	transition:0.1s ease all
+}
+
+input[type=submit]:hover{
+	background:#34c3b3;
+}

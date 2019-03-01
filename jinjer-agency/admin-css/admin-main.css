@@ -1,0 +1,92 @@
+@charset "utf-8";
+
+html{
+	min-height: 100%;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	min-width: 0;
+	background: #F1F1F1;
+	color: #313131;
+	height: 100%;
+	line-height: 1.8;
+	letter-spacing: 0.05em;
+	font-family: 'Yu Gothic','ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','Helvetica Neue', Roboto, Arial, sans-serif,'Noto Sans Japanese','Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+}
+
+ul,li{
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+}
+
+.cf::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.content-outer{
+	position: relative;
+	min-height: 600px;
+	margin-left: 200px;
+	margin-top: 50px;
+	margin-bottom: 100px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	color: #363B40;
+	font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", sans-serif;
+	font-weight: 500;
+}
+
+.content-outer .content-main{
+	margin-top: 20px;
+	padding-right: 32px;
+	padding-left: 32px;
+	max-width: 1200px;
+}
+
+.content-outer .content-main h1{
+	font-weight: 600;
+}
+
+table .fixed{
+	table-layout: fixed;
+}
+
+input:focus{
+	border: 1px solid #909090;
+}
+
+input::-webkit-input-placeholder {
+	color: #ccc;
+	font-weight: normal;
+}
+input.sample:-ms-input-placeholder {
+	color: #ccc;
+	font-weight: normal;
+}
+input.sample::-moz-placeholder {
+	color: #ccc;
+	font-weight: normal;
+}
+
+input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {background: #ffffff !important;}
+
+.required-mark{
+	font-size: 10px;
+	padding: 0.4em 0.8em;
+	color: #ffffff;
+	background: #e05146;
+	border-radius: 4px;
+	margin-left: 10px;
+	font-weight: normal;
+}

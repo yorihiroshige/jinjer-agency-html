@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>ユーザー一覧｜jinjer代理店admin</title>
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-list.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-main.css' type='text/css' media='all' />
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body class="main-container">
+	<div class="content-outer">
+		<div class="content-main cf">
+			<h1>ユーザー一覧</h1>
+			<form class="content-filter cf">
+				<dl>
+					<dt class="content-filter-term">アクティブ状態</dt>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">有効のユーザー</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">無効ユーザー</span></label></dd>
+				</dl>
+			</form>
+
+
+			<!---- 一覧部分 ---->
+			<table class="content-list-block fixed user-list">
+				<thead>
+					<tr class="content-bar">
+						<th scope="col" id="person" class="list-all list-person">担当者名</th>
+						<th scope="col" id="company" class="list-all list-company">企業名</th>
+						<th scope="col" id="email" class="list-all list-email">メールアドレス</th>
+						<th scope="col" id="agreementdate" class="list-all list-agreementdate">契約日</th>
+						<th scope="col" id="active" class="list-all list-active">アクティブ</th>
+					</tr>
+				</thead>
+				<tbody id="content-list-main">
+					<tr id="#" class="content-list-item">
+						<td class="person" data-colname="担当者名"><a class="row-person" href="#">神社　太郎</a></td>
+						<td class="company" data-colname="企業名"><a class="row-company">株式会社ネオキャリア</a></td>
+						<td class="email" data-colname="メールアドレス"><a class="row-email">taro.jinjer@neo-career.co.jp</a></td>
+						<td class="agreementdate" data-colname="契約日"><a class="row-agreementdate">2018年01月01日</a></td>
+						<td class="active" data-colname="アクティブ"><a class="agency-active-img"><img class="valid" src="./images/agency-active_valid.png"></a></td>
+					</tr>
+					<tr id="#" class="content-list-item">
+						<td class="person" data-colname="担当者名"><a class="row-person" href="#">神社　太郎</a></td>
+						<td class="company" data-colname="企業名"><a class="row-company">株式会社ネオキャリア</a></td>
+						<td class="email" data-colname="メールアドレス"><a class="row-email">taro.jinjer@neo-career.co.jp</a></td>
+						<td class="agreementdate" data-colname="契約日"><a class="row-agreementdate">2018年01月01日</a></td>
+						<td class="active" data-colname="アクティブ"><a class="agency-active-img"><img class="invalid" src="./images/agency-active_invalid.png"></a></td>
+					</tr>
+
+				</tbody>
+			</table>
+			<div class="content-pager">
+				<ul>
+					<li><a href="#"><</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li class="current"><span>3</span></li>
+					<li><span>...</span></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

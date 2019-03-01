@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>資料一覧｜jinjer代理店admin</title>
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-list.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-main.css' type='text/css' media='all' />
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body class="main-container">
+	<div class="content-outer">
+		<div class="content-main cf">
+			<h1>資料一覧</h1>
+			<form class="content-filter cf">
+				<dl>
+					<dt class="content-filter-term">ステータス</dt>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">公開済み</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">下書き保存</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">非公開</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">ゴミ箱</span></label></dd>
+				</dl>
+			</form>
+			<form class="content-filter cf">
+				<dl>
+					<dt class="content-filter-term">カテゴリー</dt>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">マニュアル</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">チラシ</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">チラシ</span></label></dd>
+				</dl>
+			</form>
+
+			<!---- 一覧部分 ---->
+			<table class="content-list-block fixed">
+				<thead>
+					<tr class="content-bar">
+						<th scope="col" id="title" class="list-all list-title">タイトル</th>
+						<th scope="col" id="category" class="list-all list-category">カテゴリー</th>
+						<th scope="col" id="status" class="list-all list-status">ステータス</th>
+						<th scope="col" id="date" class="list-all list-date">公開日時</th>
+						<th scope="col" id="delete" class="list-all list-delete">削除</th>
+					</tr>
+				</thead>
+				<tbody id="content-list-main">
+					<tr id="#" class="content-list-item">
+						<td class="title" data-colname="タイトル"><a class="row-title" href="#">jinjerワーク・バイタルの営業チラシ</a></td>
+						<td class="category" data-colname="カテゴリー"><a class="row-category">チラシ</a></td>
+						<td class="status" data-colname="ステータス"><a class="row-status">非公開</a></td>
+						<td class="date" data-colname="公開日時"><a class="row-date">2018年12月10日</a></td>
+						<td class="delete" data-colname="削除"><a class="row-delete" href="#">削除</a></td>
+					</tr>
+					<tr id="#" class="content-list-item">
+						<td class="title" data-colname="タイトル"><a class="row-title" href="#">jinjer勤怠の使用説明書などなど</a></td>
+						<td class="category" data-colname="カテゴリー"><a class="row-category">製品資料</a></td>
+						<td class="status" data-colname="ステータス"><a class="row-status">公開</a></td>
+						<td class="date" data-colname="公開日時"><a class="row-date">2019年1月12日</a></td>
+						<td class="delete" data-colname="削除"><a class="row-delete" href="#">削除</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="content-pager">
+				<ul>
+					<li><a href="#"><</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li class="current"><span>3</span></li>
+					<li><span>...</span></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+html{
+	min-height: 100%;
+}
+
+
+
+/* ---- 左サイド ---- */
+/* ---- content title ---- */
+.content-main_left{
+	width: 67%;
+	float: left;
+}
+
+.content-main_left .content-title input{
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	width: 97%;
+	padding: 8px;
+	display: block;
+	height: 1.5em;
+	font-size: 16px;
+	outline: none;
+	color: #363B40;
+}
+
+
+/* ---- category check ---- */
+.content-category p{
+	font-weight: 600;
+	margin: 30px auto 5px;
+}
+
+.content-category label span{
+	font-size: 14px;
+}
+
+.content-category-check{
+	display: none;
+}
+.checkbox-cat{
+	padding-left: 20px;
+	position:relative;
+	margin-right: 20px;
+}
+.checkbox-cat::before{
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 15px;
+	height: 15px;
+	border: 1px solid #cccccc;
+	border-radius: 4px;
+	background: #ffffff;
+}
+.content-category-check:checked + .checkbox-cat{
+	color: #099;
+}
+.content-category-check:checked + .checkbox-cat::after{
+	content: "";
+	display: block;
+	position: absolute;
+	top: -4px;
+	left: 5px;
+	width: 7px;
+	height: 14px;
+	transform: rotate(40deg);
+	border-bottom: 3px solid #099;
+	border-right: 3px solid #099;
+}
+
+/* ---- description text ---- */
+.content-main_left .content-description input{
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	width: 97%;
+	padding: 8px;
+	display: block;
+	height: 1.5em;
+	font-size: 14px;
+	outline: none;
+	color: #363B40;
+}
+
+.content-main_left .content-description input:focus{
+	border: 1px solid #909090;	
+}
+
+
+
+/* ---- 右サイド ---- */
+.content-main_right{
+	float: right;
+	width: 28%;
+	margin-right: 20px;
+}
+
+.content-main_right .content-status{
+	border: 1px solid #CCCCCC;
+	border-radius: 4px;
+	background: #ffffff;
+	padding: 20px 30px;
+}
+
+.content-main_right .content-status .content-status-button{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.content-main_right .content-status .content-status-button a{
+	display: inline-block;
+	font-size: 14px;
+	border: 1px solid #CCCCCC;
+	border-radius: 7px;
+	background: #F2F2F2;
+	font-weight: 600;
+	padding: 5px 15px;
+	margin: auto ;
+	text-decoration: none;
+	color: #363B40;
+}
+
+.content-main_right .content-status .content-status-abstract{
+	font-size: 14px;
+	font-weight: 600;
+
+}
+
+.content-main_right .content-status .content-status-abstract dt{
+	float: left;
+	width: 40%;
+}
+
+.enter-button{
+	display: inline-block;
+	color: #ffffff;
+	font-size: 16px;
+	background: #0aa;
+	padding: 0.3em 1.2em;
+	border-radius: 7px;
+	box-shadow: 0px 1px 5px #d2d2d2;
+	cursor: pointer;
+}

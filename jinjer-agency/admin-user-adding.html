@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>ユーザーの追加｜jinjer代理店admin</title>
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-user.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/Desktop/jinjer-agency/admin-css/admin-main.css' type='text/css' media='all' />
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body class="main-container">
+	<div class="content-outer">
+		<div class="content-main cf">
+			<h1><span>ユーザーの追加</span></h1>
+			<div class="user-adding-block cf">
+				<p>ユーザーの情報をご記入下さい。</p>
+				<!-- ↓こちら必須項目が記入されていない際に出てくるエラー警告です。送信ボタン押してページ変わってから表示されます。byぴろ -->
+				<p class="unenterned-error"><a>※ 未記入の必須項目がございます。</a></p>
+				<form class="user-adding-form" action="" method="post">
+					<div class="item">
+						<label class="label" for="name" name="company" required>企業名<a class="required-mark">必須</a></label>
+						<input id="company" type="text">
+					</div>
+					<div class="item">
+						<label class="label" for="name" name="name" required>担当者名<a class="required-mark">必須</a></label>
+						<input id="name" type="text">
+					</div>
+					<div class="item">
+						<label class="label" for="name" name="furigana" required>フリガナ<a class="required-mark">必須</a></label>
+						<input id="furigana" type="text">
+					</div>
+					<div class="item">
+						<label class="label" for="e-mail" required>メールアドレス<a class="required-mark">必須</a></label>
+						<input id="e-mail" type="email" name="email">
+					</div>
+					<div class="item">
+						<label class="label" for="tel" required>電話番号<a class="required-mark">必須</a></label>
+						<input id="tel" type="text" name="tel">
+					</div>
+					<div class="item">
+						<label class="label" for="date" required>契約日<a class="required-mark">必須</a></label>
+						<input id="date" type="date" name="date">
+					</div>
+					<div class="item">
+						<label class="label" for="message">備考</label>
+						<textarea rows="10" id="message" placeholder="" name="comment"></textarea>
+					</div>
+					<div class="item no-label">
+						<input type="submit">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
