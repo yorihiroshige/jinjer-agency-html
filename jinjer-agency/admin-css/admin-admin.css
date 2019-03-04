@@ -80,6 +80,11 @@ html{
 
 }
 
+.pwreset-rule{
+	font-size: 12px;
+	padding: 0 0 20px;
+}
+
 
 /* ---- 管理者パスワード変更 ---- */
 .unenterned-error a{

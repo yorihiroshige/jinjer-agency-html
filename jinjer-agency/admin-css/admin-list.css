@@ -105,6 +105,10 @@ html{
 	text-decoration-color: #099;
 }
 
+.content-list-block .row-delete:hover{
+	opacity: 0.8;
+}
+
 /* ---- pager ---- */
 .content-pager {
 	overflow: hidden;
