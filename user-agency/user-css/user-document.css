@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+
+/* ---- アンカーリンク ---- */
+.document-anchor{
+	color: #5F5F5F;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.document-anchor a{
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+}
+
+.document-anchor a:hover{
+	opacity: 0.7;
+}
+
+.document-anchor img{
+	width: 14px;
+	padding: 5px 5px 0 0 ;
+}
+
+
+/* ---- ダウンロードリスト ---- */
+.document-block{
+	max-width: 100%;
+	box-sizing: border-box;
+	word-wrap: break-word;
+	color: #5F5F5F;
+	border-spacing: 0;
+	width: 98%;
+	clear: both;
+	margin: 30px 0;
+	border-collapse: collapse;
+}
+
+.document-block .document-block_name{
+	background: #FAFAFA;
+	border: 1px solid #E3E3E3;
+	border-left: 8px solid #3faf36;
+	height: 37px;
+}
+
+.document-block .document-block_name tr{
+	height: 37px;
+	text-align: left;
+	font-size: 12px;
+}
+
+.document-block .document-block_name tr #title{
+	padding-left: 15px;
+	font-size: 16px;
+	width: 55%;
+}
+
+.document-block .document-block_main{
+	font-size:14px;
+}
+
+.document-block .document-block_main tr td{
+	padding: 10px;
+}
+
+.document-block .document-block_main tr td .row-category,
+.document-block .document-block_main tr td .row-date{
+	font-size: 12px;
+}
+
+a.row-download{
+	font-size: 11px;
+	padding: 0.6em 1.8em 0.7em 2em;
+	color: #5F5F5F;
+	background: #EFEFEF;
+	border-radius: 50px;
+	display: inline-block;
+	font-weight: bold;
+	transition-property: all;
+	transition: 0.1s linear;
+}
+
+a.row-download img{
+	width: 13px;
+	padding-right: 5px;
+}
+
+a.row-download:hover{
+	background:#F5E700;
+	color: #5F5F5F;
+	padding: 0.6em 1.9em 0.7em 1.9em;
+}

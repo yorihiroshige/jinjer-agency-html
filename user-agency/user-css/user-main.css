@@ -9,7 +9,7 @@ body{
 	padding: 0;
 	min-width: 0;
 	background: #F1F1F1;
-	color: #4D4D4D;
+	color: #5F5F5F;
 	height: 100%;
 	line-height: 1.8;
 	letter-spacing: 0.05em;
@@ -19,6 +19,10 @@ body{
 ul,li{
 	margin: 0;
 	padding: 0;
+}
+
+p{
+	color: #5F5F5F;
 }
 
 .cf::after{
@@ -88,7 +92,96 @@ h1{
 	font-size: 28px;
 }
 
+a{
+	text-decoration: none;
+	color: #4D4D4D;
+}
 
+.hi-breadcrumbs{
+	width: 100%;
+	background: linear-gradient(90deg,#ffffff, #f1f1f1);
+}
 
+.hi-breadcrumbs .breadcrumbs{
+	width: 100%;
+	max-width: 1025px;
+	margin: 0 auto;
+	padding: 6px 0 6px 30px;
+	font-size: 10px;
+	color: #4D4D4D;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.hi-breadcrumbs .breadcrumbs i {
+	font-size: 10px;
+	margin: 0 8px;
+}
+.hi-breadcrumbs .breadcrumbs > span { }
+.hi-breadcrumbs .breadcrumbs > span a:hover { color: #000 }
+.hi-breadcrumbs .breadcrumbs > span > span br { display: none }
+@media all and (max-width: 1300px){
+	.hi-breadcrumbs .breadcrumbs {width:85%;}
+	}
+@media all and (max-width: 800px) {
+	.hi-breadcrumbs .breadcrumbs {padding: 15px 16px;white-space: normal; }
+}
+
+.user-top{
+	margin-top: 105px;
+	height: 100%;
+	width: 100%;
+	overflow: auto;
+	background: url("../images/user-bk-bubble.png");
+	background-repeat: repeat-x;
+	background-position: 0px 105px ;
+	background-size: 55% auto;
+	background-attachment: fixed;
+	
+}
+
+.content-paper{
+	background: #fff;
+	box-shadow: 0px 1px 5px #d2d2d2;
+	width: 80%;
+	max-width: 1025px;
+	margin: auto;
+}
+
+.paper-inner{
+	width: 80%;
+	max-width: 850px;
+	margin: auto;
+}
+
+.paper-inner-single{
+	padding: 80px 0;
+}
+
+/* ---- コンテンツcss ---- */
+.paper-h1 {
+	margin: auto;
+	position: relative;
+	display: inline-block;
+	margin-bottom: 60px;
+	text-align: center;
+	width: 100%;
+}
+
+.paper-h1:before {
+	content: '';
+	position: absolute;
+	bottom: -15px;
+	display: inline-block;
+	width: 60px;
+	height: 5px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-color: #F0E00C;
+}
 
 

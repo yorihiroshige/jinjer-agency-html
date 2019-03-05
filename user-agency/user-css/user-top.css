@@ -1,31 +1,5 @@
 @charset "utf-8";
 
-.user-top{
-	margin-top: 105px;
-	height: 100%;
-	width: 100%;
-	overflow: auto;
-	background: url("../images/user-bk-bubble.png");
-	background-repeat: repeat-x;
-	background-position: 0px 105px ;
-	background-size: 55% auto;
-	background-attachment: fixed;
-	
-}
-
-.content-paper{
-	background: #fff;
-	box-shadow: 0px 1px 5px #d2d2d2;
-	width: 80%;
-	max-width: 1025px;
-	margin: auto;
-}
-
-.paper-inner{
-	width: 80%;
-	max-width: 850px;
-	margin: auto;
-}
 
 .paper-block{
 	padding: 60px 0;
@@ -45,6 +19,12 @@
 	font-size: 12px;
 	float: right;
 	padding: 40px 0 0 ;
+}
+
+.more-btn:hover{
+	color:#a5a5a5;
+	transition-property: all;
+	transition: 0.1s linear;
 }
 
 /* ---- 新着ニュース ---- */
@@ -87,7 +67,7 @@
 }
 
 .top-news-block .news-row .news-new a{
-	background: #C64D52;
+	background: #ea5056;
 	color: #fff;
 	border-radius: 50px;
 	padding: 0.5em 1.3em;
@@ -96,7 +76,11 @@
 
 /* ---- 役だつ動画をチェック ---- */
 .top-video-block{
-	background: #EFEFEF;
+	background: #ffffff;
+	background-image: url('../images/stagingwow.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 	margin: 0 -12.5%;
 }
 
@@ -108,4 +92,154 @@
 
 .top-video-block_inner h1{
 	margin: auto;
+	text-align: center;
+}
+
+.top-video-container{
+	margin: auto;
+	width: 100%;
+	padding: 30px 0 0 ;
+}
+
+.video-grid{
+	transition-property: all;
+	transition: 0.2s linear;
+}
+
+a.video-grid:hover{
+}
+
+.video-grid_item{
+	float: left;
+	width: 31%;
+	background: #fff;
+	border: 1px solid #eaeaea;
+	box-shadow:0px 1px 5px #eaeaea;
+	text-decoration: none;
+	color: #5F5F5F;
+	margin: 20px 1%;
+	transition-property: all;
+	transition: 0.1s linear;
+	border-radius: 13px;
+}
+
+.video-grid_item:hover{
+	border: 1px solid #F5E700;
+	box-shadow: 5px 3px 0px #F5E700;
+}
+
+
+.video-grid_item .item-thumb{
+	background: url("../images/movieeee.jpg") no-repeat top center;
+	background-size: cover;
+	height: 170px;
+	border-radius: 13px 13px 0 0;
+}
+
+.video-grid_item .item-thumb img{
+	width: 100%;
+	height: auto;
+}
+
+.video-grid_item .item-wording{
+	position: relative;
+	padding: 0 10px;
+}
+
+.video-grid_item .item-wording h2{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px auto 0;
+	height: 7em;
+}
+
+.video-grid_item .item-wording .item-date{
+	position: absolute;
+	font-size: 10px;
+	margin: 0;
+	bottom: 5px;
+	right: 10px;
+}
+
+
+/* ---- 資料ダウンロード ---- */
+
+.document-grid_item{
+	border: 1px solid #EFEFEF;
+	background: #FAFAFA;
+	float: left;
+	margin: 20px 2%;
+	padding: 25px 15px;
+	text-align: center;
+	max-width: 200px;
+}
+
+.document-grid_item h2.document-title{
+	font-size: 16px;
+	font-weight: bold;
+	color: #5F5F5F;
+	text-align: left;
+	margin: 0 0 10px 0;
+}
+
+.document-grid_item .document-subtitle{
+	color: #5F5F5F;
+	text-align: left;
+	font-size: 14px;
+}
+
+.document-grid_item a.document-download-btn{
+	display: inline-block;
+	margin: auto;
+	padding: 0.9em 2em 0.7em 4em;
+	background: #5F5F5F;
+	color: #fff;
+	border-radius: 50px;
+	background-image: url('../images/dl-icon.png');
+	background-repeat: no-repeat;
+	background-position: 1.8em;
+	background-size: 16px;
+	font-weight: bold;
+	font-size: 13px;
+	text-decoration: none;
+	cursor: pointer;
+	transition-property: all;
+	transition: 0.1s linear;
+}
+
+.document-grid_item a.document-download-btn:hover{
+	background:#F5E700;
+	color: #5F5F5F;
+	padding: 0.9em  3em 0.7em 3em;
+}
+
+
+/* ---- お問い合わせボタン ---- */
+
+.information-block{
+	margin: 0 -12.5%;
+	text-align: center;
+	background-image: url("../images/111.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+}
+
+.information-btn{
+	color:#fff;
+	font-weight: bold;
+	background: #5CB055;
+	padding: 0.5em 1.8em;
+	border-radius: 50px;
+	display: inline-block;
+/* 	margin: 50px auto 100px; */
+	box-shadow: 0 2px 5px #676767;
+	transition-property: all;
+	transition: 0.1s linear;
+}
+
+.information-btn:hover{
+	color: #5CB055;
+	background: #fff;
 }
