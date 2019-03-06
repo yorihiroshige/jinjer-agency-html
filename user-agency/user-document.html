@@ -6,7 +6,24 @@
 <title>資料一覧｜jinjer代理店</title>
 <link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/jinjer-agency-html/user-agency/user-css/user-document.css' type='text/css' media='all' />
 <link rel="stylesheet" type="text/css" href='file:///Users/NC00007593/jinjer-agency-html/user-agency/user-css/user-main.css' type='text/css' media='all' />
-<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="./user-js/nicetooltip.js"></script>
+<script>
+$(function(){
+  $('#demo1').niceTooltip({
+    HTML: "ここに説明文入りまーーーーーーーーーーーーーーーーーーーーーーーーーーーーす。"
+  });
+  $('#demo2').niceTooltip({
+    HTML: "菖蒲さんお願いしまーーーーーーーーーーーーーーーーーーーーーーーーーす。",
+    position: {
+      horizontal: "right",
+      vertical: "bottom"
+    }
+    
+  });
+});
+</script>
+
 </head>
 
 <body>
@@ -40,7 +57,7 @@
 					</div>
 
 					<table class="document-block">
-						<thead class="document-block_name">
+						<thead class="document-block_name" id="eigyou">
 							<tr>
 								<th scope="col" id="title" class="list-all list-title">営業資料</th>
 								<th scope="col" id="category" class="list-all list-category">カテゴリー</th>
@@ -50,12 +67,30 @@
 						</thead>
 						<tbody class="document-block_main">
 							<tr id="#" class="document-block_item">
-								<td class="title" data-colname="タイトル"><a class="row-title" href="#">jinjerワーク・バイタルの営業チラシ</a></td>
+								<td class="title" data-colname="タイトル"><a class="row-title"><p id="demo1">jinjerワーク・バイタルの営業チラシ</p></a></td>
 								<td class="category" data-colname="カテゴリー"><a class="row-category">営業資料</a></td>
 								<td class="date" data-colname="更新日時"><a class="row-date">18/12/10</a></td>
 								<td class="download" data-colname="ダウンロード"><a class="row-download" href="#"><img src="./images/dl-icon-bk.png">DOWNLOAD</a></td>
 							</tr>
-							
+						</tbody>
+					</table>
+
+					<table class="document-block">
+						<thead class="document-block_name" id="manual">
+							<tr>
+								<th scope="col" id="title" class="list-all list-title">マニュアル</th>
+								<th scope="col" id="category" class="list-all list-category">カテゴリー</th>
+								<th scope="col" id="date" class="list-all list-date">更新日時</th>
+								<th scope="col" id="download" class="list-all list-download"></th>
+							</tr>
+						</thead>
+						<tbody class="document-block_main">
+							<tr id="#" class="document-block_item">
+								<td class="title" data-colname="タイトル"><a class="row-title" id="demo2">【代理店用】jinjer勤怠・jinjer労務の営業マニュアル／2019年最新版</a></td>
+								<td class="category" data-colname="カテゴリー"><a class="row-category">マニュアル</a></td>
+								<td class="date" data-colname="更新日時"><a class="row-date">19/01/13</a></td>
+								<td class="download" data-colname="ダウンロード"><a class="row-download" href="#"><img src="./images/dl-icon-bk.png">DOWNLOAD</a></td>
+							</tr>
 						</tbody>
 					</table>
 				</div>

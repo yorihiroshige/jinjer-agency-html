@@ -4,164 +4,59 @@ html{
 	min-height: 100%;
 }
 
-header{
-	position: relative;
-}
-
-.page-header_index{
-	position: fixed;
+.footer-block{
+	background: #F1F1F1;
+	text-align: center;
+	padding: 60px 0 100px;
 	width: 100%;
 }
 
-
-.global-header{
-	z-index: 900;
-	top: 0;
-	width: 100%;
-	background-color:#272727;
-	height: 55px;
+.footer-jinjer-logo{
+	margin: 30px auto;
 }
 
-.global-header-inner{
-	width: 100%;
-	max-width: 1025px;
-	margin: auto;
-	padding-right: 6px;
-	padding-left: 11px;
-	-ms-flex-direction: row;
-	-ms-flex-wrap: nowrap;
-	flex-wrap: nowrap;
-	-ms-flex-pack: start;
-	justify-content: flex-start;
+.footer-jinjer-logo img{
+	width: 120px;
+}
+
+.footer-copyright{
+	font-family: 'Noto Sans Japanese', Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+	color: #7E7E7E;
+	font-size: 12px;
+	margin: 20px auto 0;
 	text-align: center;
 }
 
-#header-logo{
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 14px;
-	font-weight: bold;
-	text-shadow: 1px 1px 1px #dadada;
-	display: inline-block;
-	margin: auto;
-}
-
-.global-header-inner_left img{
-	width: 160px;
-	margin-top: 10px;
-}
-
-.global-header-inner_right{
-	position: relative;
-	text-align: right;
+.footer-neo-img{
 	width: 100%;
+	text-align: center;
+	margin-top: 15px;
 }
 
-.global-header-inner_right a{
-	text-decoration: none;
-	color: #ffffff;
-	font-size: 11px;
-	line-height: 1;
-	margin-top: 13px;
-	display: inline-block;
-}
-
-.header-triangle{
-	display: inline-block;
-	border-top: 5px solid transparent;
-	border-bottom: 5px solid transparent;
-	border-left: 5px solid #fff;
-	float: right ;
-	margin-left: 10px;
-	margin-top: 3px;
-}
-
-/* ---- メニュー ---- */
-.global-menu{
-	position: absolute;
-	background: #ffffff;
-	font-size: 13px;
-	color: #272727;
-	height: 50px;
-	top: 55px;
-	width: 100%;
-	box-shadow: 0px 2px 5px #e4e4e4;
-}
-
-ul.topnav {
-	overflow: hidden;
-	margin: auto;
-	padding: 0;
-	list-style-type: none;
-	width: 80%;
-	max-width: 1025px;
-}
-
-ul.topnav > li{
-	width: 105px;
-	float: left;
-}
-
-ul.topnav li.right{
-	float: right;
-	width: auto;
-}
-
-ul.topnav ul.right-flex{
+.footer-block ul {
 	display: flex;
-	list-style: none;
+	width: 60%;
+	max-width: 600px;
+	margin: auto;
+	font-size: 12px;
+	color: #7E7E7E;
+	/*justify-content: space-between;*/
 }
-
-ul.topnav li a {
-	display: block;
-	padding: 14px 16px;
+.footer-block ul li {
+	list-style-type: none;
+	flex-grow: 1;
 	text-align: center;
-	text-decoration: none;
-	color: #272727;
 }
 
-ul.topnav li.right a.information{
-	color:#fff;
-	font-weight: bold;
-	background: #5CB055;
-	padding: 0.3em 1.8em;
-	border-radius: 50px;
-	margin-top: 9px;
-	display: inline-block;
+.footer-block ul li a{
+	color: #717171;
 }
 
-ul.topnav li.right a.servicepage{
-	color: #5CB055;
-	font-weight: bold;
-}
-
-ul.topnav li.right a.servicepage img{
-	width: 11px;
-	padding: 3px;
-}
-
-
-ul.topnav li a:hover:not(.active) {
-	background-color: #F1F1F1;
-}
-
-#hp:hover{
-	background-color: #ffffff;
+.footer-block ul li:hover{
 	opacity: 0.8;
 }
 
-ul.topnav li a.active {
-	background-color: #F0E00C;
-	font-weight: bold;
-	box-shadow: 0px 2px 5px #e4e4e4;
+.footer-block ul li + li {
+	border-left: 1px solid #7E7E7E;
 }
 
-ul.topnav li.right a.information:hover{
-	background:#89d084;
-}
-
-@media screen and (max-width: 480px) {
-	ul.topnav li.right, ul.topnav li {
-		float: none;
-	}
-}

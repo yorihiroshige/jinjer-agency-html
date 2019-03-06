@@ -1,0 +1,68 @@
+@charset "utf-8";
+
+
+/* ---- フィルターボックス mainに移行 ---- */
+
+
+
+/* ---- 動画一覧 ---- */
+.news-list-block{
+	margin: 30px auto 60px;
+}
+
+
+.news-list-block .news-row{
+	list-style: none;
+	padding: 5px 0;
+}
+
+.news-list-block .news-row span{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.news-list-block .news-row .news-date,
+.news-list-block .news-row .news-category{
+	font-size: 12px;
+}
+
+.news-list-block .news-row .news-date{
+	margin-right: 23px;
+}
+
+.news-list-block .news-row .news-category{
+	float: right;
+	padding-top: 7px;
+}
+
+.news-list-block .news-row .news-title{
+	width: 65%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 15px;
+}
+
+.news-list-block .news-row .news-title a{
+	text-decoration: none;
+	color: #4D4D4D;
+}
+
+.news-list-block .news-row .news-new a{
+	background: #ea5056;
+	color: #fff;
+	border-radius: 50px;
+	padding: 0.5em 1.3em;
+	font-size: 10px;
+}
+
+/* ---- ページャー mainに移行 ---- */
+
+
+
+
+/* ---------- 動画詳細ページ ---------- */
+
+
+
+

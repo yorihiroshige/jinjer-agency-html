@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+
+/* ---- フィルターボックス mainに移行 ---- */
+
+
+
+/* ---- 動画一覧 ---- */
+.video-list-block{
+	margin: 30px auto 60px;
+}
+
+
+.video-list{
+	transition-property: all;
+	transition: 0.2s linear;
+}
+
+a.video-list:hover{
+}
+
+.video-list_item{
+	float: left;
+	width: 31%;
+	background: #fff;
+	border: 1px solid #efefef;
+	text-decoration: none;
+	color: #5F5F5F;
+	margin: 20px 1%;
+	transition-property: all;
+	transition: 0.1s linear;
+}
+
+.video-list_item:hover{
+	border: 1px solid #F5E700;
+	box-shadow: 5px 3px 0px #F5E700;
+}
+
+
+.video-list_item .item-thumb{
+	background: url("../images/movieeee.jpg") no-repeat top center;
+	background-size: cover;
+	height: 170px;
+}
+
+.video-list_item .item-thumb img{
+	width: 100%;
+	height: auto;
+}
+
+.video-list_item .item-wording{
+	position: relative;
+	padding: 0 10px;
+}
+
+.video-list_item .item-wording h2{
+	font-size: 14px;
+	font-weight: bold;
+	margin: 10px auto 0;
+	height: 7em;
+}
+
+.video-list_item .item-wording .item-date{
+	position: absolute;
+	font-size: 10px;
+	margin: 0;
+	bottom: 10px;
+	right: 10px;
+}
+
+
+.video-list_item .item-wording .item-category{
+	position: absolute;
+	font-size: 12px;
+	bottom: 10px;
+	left: 10px;
+	font-weight: bold;
+	color: #3faf36;
+	margin: 0;
+}
+
+/* ---- ページャー mainに移行 ---- */
+
+
+
+
+/* ---------- 動画詳細ページ ---------- */
+
+
+
+
