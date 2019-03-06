@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>jinjer代理店｜ログイン</title>
+<link rel="stylesheet" type="text/css" href='./user-css/user-login.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='./user-css/user-main.css' type='text/css' media='all' />
+<script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+
+<body class="login">
+	<div class="login-block">
+		<div class="login-box">
+			<!-- <h1>代理店admin</h1> -->
+			
+			<div class="login-first cf">
+				<div class="login-left">
+					<p>ここからのページは、株式会社ネオキャリアのjinjerとご契約いただいている販売会社・販売代理店さまのページです。弊社とご契約いただいていない方はご利用できませんので、ご了承ください。</p>
+					<a href="#">>> 新規ご登録はこちら</a>
+				</div>
+				<div class="login-right">
+					<img src="./images/jinjer-agency-logo.png" class="jinjer-agency-logo" alt="jinjer代理店サイト">
+					<form name="login-form">
+						<p>
+							<label for="user-login">
+							<input type="text" name="log" id="user_login" aria-describedby="login_error" class="input" value="" size="20" placeholder="メールアドレス" required></label>
+						</p>
+						<p>
+							<label for="user-pass">
+							<input type="password" name="log" id="user_login" aria-describedby="login_error" class="input error" value="" size="20" placeholder="パスワード" required></label>
+						</p>
+						<p class="user-forgot">
+							<label for="remember">
+							<input name="remember" type="checkbox" id="remember" value="forever">メールアドレス＆パスワード情報を保存</label>
+						</p>
+						<input class="login-go" type="submit" value="ログイン">
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="form-footer"><a>パスワードをお忘れですか？</a></div>
+
+	</div>
+</body>
+</html>

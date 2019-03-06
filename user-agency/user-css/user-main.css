@@ -68,14 +68,17 @@ input:focus{
 input::-webkit-input-placeholder {
 	color: #ccc;
 	font-weight: normal;
+	font-size: 14px;
 }
 input.sample:-ms-input-placeholder {
 	color: #ccc;
 	font-weight: normal;
+	font-size: 14px;
 }
 input.sample::-moz-placeholder {
 	color: #ccc;
 	font-weight: normal;
+	font-size: 14px;
 }
 
 input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:-internal-autofill-previewed, textarea:-internal-autofill-selected, select:-internal-autofill-previewed, select:-internal-autofill-selected {background: #ffffff !important;}
@@ -133,7 +136,7 @@ a{
 }
 
 .user-top{
-	margin-top: 105px;
+	padding-top: 105px;
 	height: 100%;
 	width: 100%;
 	overflow: auto;

@@ -133,6 +133,10 @@ input[type=submit]:hover{
 	padding: 0.5em 1.0em;
 }
 
+.user-single-button .invalidate-restore{
+	background: #0aa;
+	padding: 0.5em 1.5em;
+}
 
 /* ---- ユーザーの削除 user-delete ---- */
 .user-single p{

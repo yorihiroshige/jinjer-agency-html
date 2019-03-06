@@ -17,11 +17,12 @@
 			<form name="login-form">
 				<p>
 					<label for="user-login">
-					<input type="text" name="log" id="user_login" aria-describedby="login_error" class="input" value="" size="20" placeholder="メールアドレス" required></label>
+					<input type="text" name="log" id="user_login" aria-describedby="login_error" class="input" value="" size="20" placeholder="メールアドレス"></label>
 				</p>
+				<!-- ↓こちらエラー表示です。class="error" piro -->
 				<p>
 					<label for="user-pass">
-					<input type="password" name="log" id="user_login" aria-describedby="login_error" class="input" value="" size="20" placeholder="パスワード" required></label>
+					<input type="text" name="log" id="user_login" aria-describedby="login_error" class="input error" value="" size="20" placeholder="パスワード"></label>
 				</p>
 				<p class="user-forgot">
 					<label for="remember">
@@ -31,7 +32,6 @@
 			</form>
 		</div>
 		<div class="form-footer"><a>パスワードをお忘れですか？</a></div>
-
 	</div>
 </body>
 </html>
