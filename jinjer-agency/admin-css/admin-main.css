@@ -38,7 +38,7 @@ p {
 	position: relative;
 	min-height: 600px;
 	margin-left: 200px;
-	margin-top: 50px;
+	margin-top: 70px;
 	margin-bottom: 100px;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -83,10 +83,11 @@ input:-internal-autofill-previewed, input:-internal-autofill-selected, textarea:
 
 .required-mark{
 	font-size: 10px;
-	padding: 0.4em 0.8em;
+	padding: 0.1em 0.8em;
 	color: #ffffff;
 	background: #e05146;
 	border-radius: 4px;
 	margin-left: 10px;
 	font-weight: normal;
+	display: inline-block;
 }

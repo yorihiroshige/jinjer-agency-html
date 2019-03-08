@@ -145,7 +145,7 @@ a.video-grid:hover{
 }
 
 .video-grid_item .item-wording{
-	position: relative;
+	/* position: relative; */
 	padding: 0 10px;
 }
 
@@ -157,11 +157,10 @@ a.video-grid:hover{
 }
 
 .video-grid_item .item-wording .item-date{
-	position: absolute;
+	/* position: absolute; */
 	font-size: 10px;
-	margin: 0;
-	bottom: 5px;
-	right: 10px;
+	margin: 0 auto 10px;
+	float: right;
 }
 
 

@@ -7,9 +7,19 @@
 <link rel="stylesheet" type="text/css" href='./admin-css/admin-category.css' type='text/css' media='all' />
 <link rel="stylesheet" type="text/css" href='./admin-css/admin-main.css' type='text/css' media='all' />
 <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="//code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+//共通パーツ読み込み
+ $(function() {
+ $("#header").load("admin-header.html");
+ $("#side").load("admin-side.html");
+ $("#footer").load("admin-footer.html");
+});
+</script>
 </head>
 
 <body class="main-container">
+	<div id="header"></div>
 	<div class="content-outer">
 		<div class="content-main cf">
 			<h1><span>資料</span> > <span>カテゴリー管理</span></h1>

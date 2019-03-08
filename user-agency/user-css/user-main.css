@@ -276,7 +276,6 @@ a{
 	border-radius: 50px;
 }
 .pager .pagination li a.active{
-	color: #fff;
 	background: #f0e00c;
 	border-radius: 50px;
 }

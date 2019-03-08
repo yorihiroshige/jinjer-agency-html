@@ -4,18 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 <title>jinjer代理店｜ログイン</title>
-<link rel="stylesheet" type="text/css" href='./admin-css/admin-nav.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='./admin-css/admin-header.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='./admin-css/admin-nav-3.css' type='text/css' media='all' />
 <link rel="stylesheet" type="text/css" href='./admin-css/admin-main.css' type='text/css' media='all' />
+<link rel="stylesheet" type="text/css" href='./admin-css/admin-list.css' type='text/css' media='all' />
 <script src="/javascripts/application.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
-
+<!-- header -->
 <body class="nav-containter">
-	<div class="admin-nav">
+	<div class="page-header_index cf" >
+		<div class="global-header cf">
+			<div class="global-header-inner cf">
+				<div class="global-header-inner_left cf">
+					<a href="#"><img src="./images/jinjer-agency-logo.png"></a>
+				</div>
+				<div class="global-header-inner_right cf">
+					<a class="user-account" href="#">yohri.hiroshige@neo-career.co.jp<div class="header-triangle"></div></a>
+				</div>
+			</div>	
+		</div>
+	</div>
+<!-- /header -->
+<!-- nav -->
+	<div class="admin-nav" id="side-nav">
 		<div class="admin-nav-back"></div>
 		<div class="admin-nav-scroll">
 			<ul class="admin-nav-list" role="navgation" aria-label="メインメニュー">
 				<li class="admin-nav-list_item">
-					<a class="nav-link" href="#">
+					<a class="nav-link  active" href="#">
 						管理者
 					</a>
 				</li>
@@ -23,23 +39,117 @@
 					<a class="nav-link" href="#">
 						ニュース
 					</a>
+					<ul>
+						<li><a href="#">ニュース一覧</a></li>
+						<li><a href="#">新規追加</a></li>
+						<li><a href="#">カテゴリー管理</a></li>
+					</ul>
 				</li>
 				<li class="admin-nav-list_item">
 					<a class="nav-link" href="#">
 						資料ダウンロード
 					</a>
+					<ul>
+						<li><a href="#">資料一覧</a></li>
+						<li><a href="#">新規追加</a></li>
+						<li><a href="#">カテゴリー管理</a></li>
+					</ul>
 				</li>
 				<li class="admin-nav-list_item">
 					<a class="nav-link" href="#">
 						動画コンテンツ
 					</a>
+					<ul>
+						<li><a href="#">動画一覧</a></li>
+						<li><a href="#">新規追加</a></li>
+						<li><a href="#">カテゴリー管理</a></li>
+					</ul>
 				</li>
 				<li class="admin-nav-list_item">
 					<a class="nav-link" href="#">
 						ユーザー管理
 					</a>
+					<ul>
+						<li><a href="#">ユーザー一覧</a></li>
+						<li><a href="#">ユーザーを追加</a></li>
+					</ul>
 				</li>
 			</ul>
+		</div>
+	</div>
+	<!-- /nav -->
+	<div class="content-outer">
+		<div class="content-main cf">
+			<h1>動画一覧</h1>
+			<form class="content-filter cf">
+				<dl>
+					<dt class="content-filter-term">ステータス</dt>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">公開済み</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">下書き保存</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">非公開</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="radio01[]" type="radio"><span class="radio-cat">ゴミ箱</span></label></dd>
+				</dl>
+			</form>
+			<form class="content-filter cf">
+				<dl>
+					<dt class="content-filter-term">カテゴリー</dt>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">商談関連</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">代理店教育</span></label></dd>
+					<dd class="content-filter-item"><label><input class="content-category-check" name="checkbox01[]" type="checkbox"><span class="checkbox-cat">製品紹介</span></label></dd>
+				</dl>
+			</form>
+
+			<!---- 一覧部分 ---->
+			<table class="content-list-block fixed">
+				<thead>
+					<tr class="content-bar">
+						<th scope="col" id="thumbnail" class="list-all list-thumbnail">サムネイル</th>
+						<!-- ↓こちら動画コンテンツの一覧だけ、class名が　list-title-video になっております。 -->
+						<th scope="col" id="title" class="list-all list-title_video">タイトル</th>
+						<th scope="col" id="category" class="list-all list-category">カテゴリー</th>
+						<th scope="col" id="status" class="list-all list-status">ステータス</th>
+						<th scope="col" id="date" class="list-all list-date">公開日時</th>
+						<th scope="col" id="delete" class="list-all list-delete">削除</th>
+					</tr>
+				</thead>
+				<tbody id="content-list-main">
+					<tr id="#" class="content-list-item">
+						<td class="thumbnail" data-colname="サムネイル"><a class="row-thumbnail"><img src="./images/movieeee.jpg"></a></td>
+						<td class="title" data-colname="タイトル"><a class="row-title" href="#">jinjerシリーズの営業テクニックをご紹介！jinjerシリーズの営業テクニックをご紹介！</a></td>
+						<td class="category" data-colname="カテゴリー"><a class="row-category">商談関連</a></td>
+						<td class="status" data-colname="ステータス"><a class="row-status">公開</a></td>
+						<td class="date" data-colname="公開日時"><a class="row-date">2018年12月10日</a></td>
+						<td class="delete" data-colname="削除"><a class="row-delete" href="#">削除</a></td>
+					</tr>
+					<tr id="#" class="content-list-item">
+						<td class="thumbnail" data-colname="サムネイル"><a class="row-thumbnail"><img src="./images/movieeee.jpg"></a></td>
+						<td class="title" data-colname="タイトル"><a class="row-title" href="#">jinjerシリーズの営業テクニックをご紹介！jinjerシリーズの営業テクニックをご紹介！</a></td>
+						<td class="category" data-colname="カテゴリー"><a class="row-category">商談関連</a></td>
+						<td class="status" data-colname="ステータス"><a class="row-status">公開</a></td>
+						<td class="date" data-colname="公開日時"><a class="row-date">2018年12月10日</a></td>
+						<td class="delete" data-colname="削除"><a class="row-delete" href="#">削除</a></td>
+					</tr>
+					<tr id="#" class="content-list-item">
+						<td class="thumbnail" data-colname="サムネイル"><a class="row-thumbnail"><img src="./images/movieeee.jpg"></a></td>
+						<td class="title" data-colname="タイトル"><a class="row-title" href="#">jinjerシリーズの営業テクニックをご紹介！jinjerシリーズの営業テクニックをご紹介！</a></td>
+						<td class="category" data-colname="カテゴリー"><a class="row-category">商談関連</a></td>
+						<td class="status" data-colname="ステータス"><a class="row-status">公開</a></td>
+						<td class="date" data-colname="公開日時"><a class="row-date">2018年12月10日</a></td>
+						<td class="delete" data-colname="削除"><a class="row-delete" href="#">削除</a></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="content-pager">
+				<ul>
+					<li><a href="#"><</a></li>
+					<li><a href="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li class="current"><span>3</span></li>
+					<li><span>...</span></li>
+					<li><a href="#">5</a></li>
+					<li><a href="#">></a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </body>
