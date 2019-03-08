@@ -80,6 +80,10 @@ html{
 
 }
 
+.pwreset:hover{
+	opacity: 0.8;
+}
+
 .pwreset-rule{
 	font-size: 12px;
 	padding: 0 0 20px;

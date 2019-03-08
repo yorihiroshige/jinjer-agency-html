@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+html{
+	min-height: 100%;
+}
+
+.error-block{
+	width: 100%;
+	padding: 100px 0;
+	margin: auto;
+	text-align: center;
+}
+
+.error-block p.warning{
+	color: #ff5656;
+	font-weight: bold;
+}
+
+.error-block p.warning span{
+	font-size: 48px;
+	text-shadow: 1px 1px 3px #d0d0d0;
+}

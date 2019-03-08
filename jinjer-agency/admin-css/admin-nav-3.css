@@ -90,7 +90,7 @@
 	height: 0;
 	left: 200px;
 	list-style: none;
-	transition: 0.2s;
+	/* transition: 0.2s; */
 }
 
 .admin-nav .admin-nav-list_item ul li a{
