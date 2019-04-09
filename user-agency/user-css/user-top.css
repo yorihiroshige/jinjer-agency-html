@@ -57,7 +57,7 @@
 }
 
 .top-news-block .news-row .news-title{
-	width: 65%;
+	width: 68%;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -69,12 +69,13 @@
 	color: #4D4D4D;
 }
 
-.top-news-block .news-row .news-new a{
+a.news-new{
 	background: #ea5056;
 	color: #fff;
 	border-radius: 50px;
-	padding: 0.5em 1.3em;
-	font-size: 10px;
+	padding: 0.5em 1.5em 0.7em;
+	font-size: 12px;
+	margin-left: 20px;
 }
 
 /* ---- 役だつ動画をチェック ---- */
@@ -173,6 +174,7 @@ a.video-grid:hover{
 	margin: 20px 2%;
 	padding: 25px 15px;
 	text-align: center;
+	width: 33%;
 	max-width: 200px;
 }
 
@@ -182,6 +184,7 @@ a.video-grid:hover{
 	color: #5F5F5F;
 	text-align: left;
 	margin: 0 0 10px 0;
+	height: 3em;
 }
 
 .document-grid_item .document-subtitle{
@@ -189,6 +192,7 @@ a.video-grid:hover{
 	text-align: left;
 	font-size: 14px;
 	margin: 15px 0;
+	height: 5em;
 }
 
 .document-grid_item a.document-download-btn{
