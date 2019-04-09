@@ -35,6 +35,7 @@ header{
 	-ms-flex-pack: start;
 	justify-content: flex-start;
 	text-align: center;
+	position: relative;
 }
 
 #header-logo{
@@ -53,9 +54,12 @@ header{
 }
 
 .global-header-inner_right{
-	position: relative;
+	position: absolute;
 	text-align: right;
 	width: 100%;
+	max-width: 1025px;
+	top: 0;
+
 }
 
 .global-header-inner_right a{
@@ -63,7 +67,7 @@ header{
 	color: #ffffff;
 	font-size: 11px;
 	line-height: 1;
-	margin-top: 13px;
+	margin-top: 20px;
 	display: inline-block;
 }
 
@@ -75,6 +79,12 @@ header{
 	float: right ;
 	margin-left: 10px;
 	margin-top: 3px;
+}
+
+.logout-btn{
+	width: 20px;
+	vertical-align: middle;
+	margin-left: 10px;
 }
 
 /* ---- メニュー ---- */
@@ -94,7 +104,7 @@ ul.topnav {
 	margin: auto;
 	padding: 0;
 	list-style-type: none;
-	width: 80%;
+	width: 100%;
 	max-width: 1025px;
 }
 
@@ -111,6 +121,7 @@ ul.topnav li.right{
 ul.topnav ul.right-flex{
 	display: flex;
 	list-style: none;
+	padding-right: 10px;
 }
 
 ul.topnav li a {
