@@ -5,7 +5,7 @@
 
 
 
-/* ---- 動画一覧 ---- */
+/* ---- ニュース一覧 ---- */
 .news-list-block{
 	margin: 30px auto 60px;
 }
@@ -14,6 +14,7 @@
 .news-list-block .news-row{
 	list-style: none;
 	padding: 5px 0;
+	border-bottom: 1px dotted #dedede;
 }
 
 .news-list-block .news-row span{
@@ -61,7 +62,7 @@
 
 
 
-/* ---------- 動画詳細ページ ---------- */
+/* ---------- ニュース詳細ページ ---------- */
 
 
 
