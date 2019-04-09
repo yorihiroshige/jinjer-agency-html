@@ -10,8 +10,8 @@ body{
 	min-width: 0;
 	background: #F1F1F1;
 	color: #5F5F5F;
-	height: 100%;
 	line-height: 1.8;
+	min-height: auto;
 	letter-spacing: 0.05em;
 	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','Helvetica Neue', Roboto, Arial, sans-serif,'Noto Sans Japanese','Yu Gothic','Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
 }
@@ -139,7 +139,7 @@ a{
 	padding-top: 105px;
 	height: 100%;
 	width: 100%;
-	overflow: auto;
+	/* overflow: auto; */
 	background: url("../images/user-bk-bubble.png");
 	background-repeat: repeat-x;
 	background-position: 0px 105px ;
