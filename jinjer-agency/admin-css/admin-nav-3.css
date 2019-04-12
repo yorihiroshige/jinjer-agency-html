@@ -4,7 +4,7 @@
 	position: fixed;
 	z-index: 601;
 	top: 55px;
-	width: 200px;
+	width: 180px;
 	height: calc(100% - 50px);
 /* 	pointer-events: none; */
 }
@@ -30,7 +30,7 @@
 }
 
 .admin-nav .admin-nav-scroll{
-	width: 200px;
+	width: 180px;
 	transition-property: width;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -65,14 +65,14 @@
 
 .admin-nav .admin-nav-list_item a{
 	display: block;
-	width: 200px;
+	width: 180px;
 	height: 50px;
 	color: #ffffff;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 15px;
 	font-weight: normal;
 	padding-left: 25px;
-	padding-top: 11px;
+	padding-top: 12px;
 	box-sizing: border-box;
 	transition: 0.5s;
 	background: #099;
@@ -82,7 +82,7 @@
 	position: absolute;
 	content: "";
 	top: 0px;
-	left: 200px;
+	left: 180px;
 }
 
 .admin-nav .admin-nav-list_item ul li{
@@ -111,3 +111,5 @@
 .admin-nav .active{
 	background: #f1f1f1;
 }
+
+

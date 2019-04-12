@@ -37,7 +37,7 @@ p {
 .content-outer{
 	position: relative;
 	min-height: 600px;
-	margin-left: 200px;
+	margin-left: 180px;
 	margin-top: 70px;
 	margin-bottom: 100px;
 	-webkit-backface-visibility: hidden;
