@@ -228,3 +228,44 @@ input[type=submit]:focus{
 input[type=submit]:hover{
 	opacity: 0.8;
 }
+
+
+
+/* term 利用規約 */
+.term .jinjer-agency-logo{
+	width: 200px;
+}
+
+.term-title{
+	margin: 10px auto;
+	font-size: 16px;
+	color: #3fae36;
+	text-align: left;
+}
+
+.term-box{
+	height: 140px;
+	border-radius: 6px;
+	border: 1px solid #D6D6D6;
+	text-align: left;
+	font-size: 10px;
+	color: #5F5F5F;
+	line-height: 2;
+	overflow: auto;
+	padding: 0 1.5em;
+}
+
+.term-box dt{
+	font-weight: 600;
+	margin: 0.5em 0;
+}
+
+.term-box dd{
+	margin-inline-start: 0;
+}
+
+#accept{
+	width: 15px;
+	display: inline-block;
+	margin: 5px 0 30px;
+}
